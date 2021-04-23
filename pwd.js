@@ -1,3 +1,3 @@
-module.exports = function pwd() {
-  process.stdout.write(process.cwd());
+module.exports = function pwd(done) {
+  done(process.cwd());
 };
